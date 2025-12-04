@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Portal</title>
-
+    <title>owen's games</title>
     <style>
         body {
             background-color: #181818;
@@ -41,11 +40,22 @@
             color: transparent;
         }
 
+        nav a {
+            color: #ccc;
+            margin-right: 15px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav a:last-child {
+            margin-right: 0;
+        }
+
         /* GRID */
         .grid {
             width: 90%;
             max-width: 1100px;
-            margin: 40px auto;
+            margin: 20px auto 40px auto; /* tightened top spacing */
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 24px;
@@ -55,9 +65,12 @@
         .card {
             background: #222;
             border-radius: 12px;
-            overflow: hidden;
+            /* overflow: hidden; Removed as it's not needed without a thumb */
             border: 1px solid #333;
             transition: 0.2s ease-in-out;
+            text-decoration: none;
+            /* Ensures content stays inside when thumb is removed */
+            display: block; 
         }
 
         .card:hover {
@@ -66,10 +79,7 @@
             box-shadow: 0 8px 18px rgba(0,0,0,0.4);
         }
 
-        .thumb {
-            height: 140px;
-            background: linear-gradient(135deg, #4b5563, #6b7280);
-        }
+        /* The .thumb class definition was removed here */
 
         .card-content {
             padding: 16px;
@@ -84,18 +94,7 @@
 
         .card-desc {
             color: #bcbcbc;
-            font-size: 14px;
-        }
-
-        /* PAGE TOP SECTION */
-        .top-section {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .top-section h2 {
-            font-size: 36px;
-            margin-bottom: 8px;
+            font-size: 26.9px;
         }
 
         footer {
@@ -105,54 +104,37 @@
             border-top: 1px solid #333;
             margin-top: 60px;
         }
-
     </style>
 </head>
 
 <body>
 
-    <!-- NAV -->
     <header>
-        <div class="nav-container">
-            <div class="title">Game Portal</div>
-            <nav>
-                <a style="color:#ccc; margin-right:15px;" href="#">Home</a>
-                <a style="color:#ccc; margin-right:15px;" href="#">Latest</a>
-                <a style="color:#ccc;" href="#">Random</a>
-            </nav>
+        <a href="http://games.smaal.pro">
+            <div class="nav-container">
+            <div class="title">owen's games</div>
         </div>
+    </a>
+        
     </header>
 
-    <!-- TOP TEXT -->
-    <div class="top-section">
-        <h2>Play Awesome Games</h2>
-        <p style="color:#bcbcbc;">Fast-loading, fun, and always free.</p>
-    </div>
-
-    <!-- GAME GRID -->
     <div class="grid">
 
-        <!-- Funny Shooter -->
         <a href="https://immcrab.github.io/shooter" target="_blank" class="card">
-            <div class="thumb"></div>
             <div class="card-content">
                 <div class="card-title">Funny Shooter</div>
                 <div class="card-desc">A goofy, chaotic shooter game.</div>
             </div>
         </a>
 
-        <!-- Alien Attack -->
         <a href="https://immcrab.github.io/game" target="_blank" class="card">
-            <div class="thumb"></div>
             <div class="card-content">
                 <div class="card-title">Alien Attack</div>
                 <div class="card-desc">Defend the world from alien waves.</div>
             </div>
         </a>
 
-        <!-- Flip Bros -->
         <a href="https://immcrab.github.io/flip-bros" target="_blank" class="card">
-            <div class="thumb"></div>
             <div class="card-content">
                 <div class="card-title">Flip Bros</div>
                 <div class="card-desc">Jump, flip, and defeat enemies.</div>
@@ -160,7 +142,6 @@
         </a>
 
         <a href="https://immcrab.github.io/skibidi-shooter" target="_blank" class="card">
-            <div class="thumb"></div>
             <div class="card-content">
                 <div class="card-title">Skibidi Shooter</div>
                 <div class="card-desc">Fight against the skibidi's! (ts so lame tbh🥀)</div>
@@ -168,7 +149,6 @@
         </a>
 
         <a href="https://immcrab.github.io/67mango" target="_blank" class="card">
-            <div class="thumb"></div>
             <div class="card-content">
                 <div class="card-title">Word City (crossed)</div>
                 <div class="card-desc">get the correct words</div>
@@ -176,7 +156,6 @@
         </a>
 
         <a href="https://immcrab.github.io/wordle-infinite" target="_blank" class="card">
-            <div class="thumb"></div>
             <div class="card-content">
                 <div class="card-title">Wordle</div>
                 <div class="card-desc">guess the word, infinitely!</div>
@@ -184,7 +163,6 @@
         </a>
 
         <a href="https://immcrab.github.io/ClashOfTanks" target="_blank" class="card">
-            <div class="thumb"></div>
             <div class="card-content">
                 <div class="card-title">Clash Of Tanks</div>
                 <div class="card-desc">clash of clans rip off </div>
@@ -192,18 +170,51 @@
         </a>
 
         <a href="https://immcrab.github.io/DriveMad" target="_blank" class="card">
-            <div class="thumb"></div>
             <div class="card-content">
                 <div class="card-title">Drive Mad</div>
-                <div class="card-desc">not to crazy there billy bad ass</div>
+                <div class="card-desc">not too crazy there billy bad ass</div>
             </div>
         </a>
 
         <a href="https://immcrab.github.io/zombie-outbreak-arena" target="_blank" class="card">
-            <div class="thumb"></div>
             <div class="card-content">
                 <div class="card-title">Zombie Outbreak Arena</div>
                 <div class="card-desc">idk</div>
+            </div>
+        </a>
+
+        <a href="https://immcrab.github.io/odd-bot-out" target="_blank" class="card">
+            <div class="card-content">
+                <div class="card-title">Odd Bot Out</div>
+                <div class="card-desc">can u find the real one?</div>
+            </div>
+        </a>
+
+        <a href="https://immcrab.github.io/ducklings-io" target="_blank" class="card">
+            <div class="card-content">
+                <div class="card-title">Duckingling IO</div>
+                <div class="card-desc">save the duckies!</div>
+            </div>
+        </a>
+
+        <a href="https://immcrab.github.io/GeometryDash" target="_blank" class="card">
+            <div class="card-content">
+                <div class="card-title">Geometry Dash</div>
+                <div class="card-desc">don't hit those damn spikes!</div>
+            </div>
+        </a>
+
+        <a href="https://immcrab.github.io/muskvszuck" target="_blank" class="card">
+            <div class="card-content">
+                <div class="card-title">Musk VS Zuck</div>
+                <div class="card-desc">DON'T LOSE!</div>
+            </div>
+        </a>
+
+        <a href="https://immcrab.github.io/soccer" target="_blank" class="card">
+            <div class="card-content">
+                <div class="card-title">Soccer Stars</div>
+                <div class="card-desc">don't miss or HE WILL GET YOU...</div>
             </div>
         </a>
 
