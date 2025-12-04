@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Portal</title>
+
+    <style>
+        body {
+            background-color: #181818;
+            color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* NAV BAR */
+        header {
+            width: 100%;
+            padding: 16px 0;
+            background: #111;
+            border-bottom: 1px solid #222;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        .nav-container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            background: linear-gradient(to right, #4c8ef7, #7ec7ff);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        /* GRID */
+        .grid {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        /* GAME CARDS */
+        .card {
+            background: #222;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #333;
+            transition: 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            border-color: #4c8ef7;
+            transform: translateY(-6px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.4);
+        }
+
+        .thumb {
+            height: 140px;
+            background: linear-gradient(135deg, #4b5563, #6b7280);
+        }
+
+        .card-content {
+            padding: 16px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 6px;
+        }
+
+        .card-desc {
+            color: #bcbcbc;
+            font-size: 14px;
+        }
+
+        /* PAGE TOP SECTION */
+        .top-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .top-section h2 {
+            font-size: 36px;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            border-top: 1px solid #333;
+            margin-top: 60px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <header>
+        <div class="nav-container">
+            <div class="title">Game Portal</div>
+            <nav>
+                <a style="color:#ccc; margin-right:15px;" href="#">Home</a>
+                <a style="color:#ccc; margin-right:15px;" href="#">Latest</a>
+                <a style="color:#ccc;" href="#">Random</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- TOP TEXT -->
+    <div class="top-section">
+        <h2>Play Awesome Games</h2>
+        <p style="color:#bcbcbc;">Fast-loading, fun, and always free.</p>
+    </div>
+
+    <!-- GAME GRID -->
+    <div class="grid">
+
+        <!-- Funny Shooter -->
+        <a href="https://immcrab.github.io/shooter" target="_blank" class="card">
+            <div class="thumb"></div>
+            <div class="card-content">
+                <div class="card-title">Funny Shooter</div>
+                <div class="card-desc">A goofy, chaotic shooter game.</div>
+            </div>
+        </a>
+
+        <!-- Alien Attack -->
+        <a href="https://immcrab.github.io/game" target="_blank" class="card">
+            <div class="thumb"></div>
+            <div class="card-content">
+                <div class="card-title">Alien Attack</div>
+                <div class="card-desc">Defend the world from alien waves.</div>
+            </div>
+        </a>
+
+        <!-- Flip Bros -->
+        <a href="https://immcrab.github.io/flip-bros" target="_blank" class="card">
+            <div class="thumb"></div>
+            <div class="card-content">
+                <div class="card-title">Flip Bros</div>
+                <div class="card-desc">Jump, flip, and defeat enemies.</div>
+            </div>
+        </a>
+
+        <a href="https://immcrab.github.io/skibidi-shooter" target="_blank" class="card">
+            <div class="thumb"></div>
+            <div class="card-content">
+                <div class="card-title">Skibidi Shooter</div>
+                <div class="card-desc">Fight against the skibidi's! (ts so lame tbh🥀)</div>
+            </div>
+        </a>
+
+        <a href="https://immcrab.github.io/67mango" target="_blank" class="card">
+            <div class="thumb"></div>
+            <div class="card-content">
+                <div class="card-title">Word City (crossed)</div>
+                <div class="card-desc">get the correct words</div>
+            </div>
+        </a>
+
+        <a href="https://immcrab.github.io/wordle-infinite" target="_blank" class="card">
+            <div class="thumb"></div>
+            <div class="card-content">
+                <div class="card-title">Wordle</div>
+                <div class="card-desc">guess the word, infinitely!</div>
+            </div>
+        </a>
+
+        <a href="https://immcrab.github.io/ClashOfTanks" target="_blank" class="card">
+            <div class="thumb"></div>
+            <div class="card-content">
+                <div class="card-title">Clash Of Tanks</div>
+                <div class="card-desc">clash of clans rip off </div>
+            </div>
+        </a>
+
+        <a href="https://immcrab.github.io/DriveMad" target="_blank" class="card">
+            <div class="thumb"></div>
+            <div class="card-content">
+                <div class="card-title">Drive Mad</div>
+                <div class="card-desc">not to crazy there billy bad ass</div>
+            </div>
+        </a>
+
+        <a href="https://immcrab.github.io/zombie-outbreak-arena" target="_blank" class="card">
+            <div class="thumb"></div>
+            <div class="card-content">
+                <div class="card-title">Zombie Outbreak Arena</div>
+                <div class="card-desc">idk</div>
+            </div>
+        </a>
+
+    </div>
+
+    <footer>
+        Game Portal © 2025
+    </footer>
+
+</body>
+</html>
